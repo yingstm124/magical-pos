@@ -1,0 +1,1 @@
+export type ProductType = 'book' | 'clothing' | 'sweet-trolley' | 'wand' | 'potion'
