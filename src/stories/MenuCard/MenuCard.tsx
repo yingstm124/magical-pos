@@ -46,7 +46,7 @@ function MenuCard({ onClick, isSelected = false, name }: IMenuCard) {
             alignItems="center"
         >
             <Card
-                style={{ width: "100%", maxWidth: 250 }}
+                style={{ width: "100%", maxWidth: 100 }}
                 sx={{
                     border: isSelected ? "3px solid" : "0px",
                     borderColor: "primary.main",
@@ -55,7 +55,7 @@ function MenuCard({ onClick, isSelected = false, name }: IMenuCard) {
                 <Grid item xs>
                     <CardActionArea onClick={onClick}>
                         <CardContent>
-                            <Grid item container justifyContent="center">
+                            <Grid item container justifyContent="center" mb={4}>
                                 {menuIcon}
                             </Grid>
                             <Grid item container justifyContent="center" mb={2}>
